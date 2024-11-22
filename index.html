@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center w-100 ">
+        <h1 class="py-3 position-relative fw-bold">Bookmarker</h1>
+
+        <div class="brook w-100 d-flex flex-column align-items-center justify-content-center  py-4 p-3">
+            <h2>
+                <i class="fa-solid fa-bookmark "></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="name w-100 d-flex flex-column justify-content-center py-4">
+                <label for="setName" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name              
+                </label>
+                <input oninput="validationForme(this)" type="text" placeholder="Bookmark Name" class="form-control " id="setName">
+            </div>
+            <div class="name w-100 d-flex flex-column justify-content-center py-4">
+                <label for="setUrl" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL
+                </label>
+                <input  oninput="validationForme(this)" i type="url" placeholder="Website URL" class="form-control " id="setUrl">
+            </div>
+            <button onclick="addBook()" class="btn btn-danger px-5" id="Submit"> Submit</button>
+
+
+        </div>
+        <table class="table mt-4 text-center bg-light">
+            <thead>
+                <tr>
+                    <th class=" text-capitalize">
+                        index
+                    </th>
+                    <th class=" text-capitalize">
+                        Website Name
+                    </th>
+                    <th class=" text-capitalize">
+                        Visit
+                    </th>
+                    <th class=" text-capitalize">
+                        Delete
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="data">
+               
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

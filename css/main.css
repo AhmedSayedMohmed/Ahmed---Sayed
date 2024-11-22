@@ -1,0 +1,55 @@
+h1:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    z-index: -1;
+    transition: height 0.5s;
+
+}
+body
+{
+    background-color: #f7ecde;
+}
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+    color: rgb(53, 46, 40);
+}
+
+h1:hover::before {
+    height: 45%;
+}
+
+.brook {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.brook h2
+{
+    color: #59a657;
+}
+
+.form-control:focus {
+    color: #212521;
+    background-color: #fff;
+    border-color: #fec260;
+    ;
+    box-shadow: #fec277;
+}
+
+.visit {
+    background-color: #9eb23b;
+    color: #fff;
+}
+
+.dalete {
+    background-color: #eb1d36;
+    color: #fff;
+}
